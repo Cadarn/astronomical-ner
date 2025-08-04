@@ -1,0 +1,79 @@
+{
+  "model_info": {
+    "base_model": "core_web_md",
+    "model_path": "../data/models/astronomical_ner_finetuned",
+    "training_date": "2025-08-04T19:55:28.512977",
+    "approach": "fine-tuning"
+  },
+  "config": {
+    "train_split": 0.7,
+    "val_split": 0.15,
+    "test_split": 0.15,
+    "n_iter": 20,
+    "dropout": 0.3,
+    "batch_size": 8,
+    "learn_rate": 0.0005,
+    "early_stopping_patience": 5,
+    "min_improvement": 0.01
+  },
+  "performance": {
+    "precision": 0.3333333333333333,
+    "recall": 0.002386634844868735,
+    "f1": 0.004739336492890996,
+    "true_positives": 2,
+    "false_positives": 4,
+    "false_negatives": 836
+  },
+  "training_time": 381.4036977291107,
+  "training_history": {
+    "train_loss": [
+      "11307.291",
+      "83.75062",
+      "458.1241",
+      "62.55899",
+      "59.77846"
+    ],
+    "val_f1": [
+      0.009163802978235968,
+      0.002290950744558992,
+      0.002290950744558992,
+      0.009163802978235968,
+      0.002290950744558992
+    ],
+    "val_precision": [
+      1.0,
+      0.25,
+      0.25,
+      1.0,
+      0.25
+    ],
+    "val_recall": [
+      0.004602991944764097,
+      0.0011507479861910242,
+      0.0011507479861910242,
+      0.004602991944764097,
+      0.0011507479861910242
+    ],
+    "val_true_pos": [
+      4,
+      1,
+      1,
+      4,
+      1
+    ],
+    "val_false_pos": [
+      0,
+      3,
+      3,
+      0,
+      3
+    ],
+    "val_false_neg": [
+      865,
+      868,
+      868,
+      865,
+      868
+    ]
+  }
+}
